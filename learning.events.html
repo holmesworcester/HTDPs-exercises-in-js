@@ -1,0 +1,28 @@
+<html>
+<head>	
+	<script>
+
+// Null -> Null
+// moves the word right until it's at 800px
+
+ var scrollRight = function() {
+	var left = document.getElementById("word").style.left;
+	while (left < 800) {
+		left = left + 1;
+	}
+}
+
+// runs the function scrollRight on page load.
+
+onload = scrollRight();
+	</script>
+	<style>
+	p {
+		position: absolute;
+		left: 100px;
+	}
+	</style>
+<body>
+<p id="word">Word</p>
+</body>
+</html>

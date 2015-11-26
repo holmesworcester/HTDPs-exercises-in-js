@@ -11,19 +11,18 @@ const BOA_WIGGLE = 2; // boas need wiggle room too. this is the proportion of ca
 // A Boa Constrictor is a structure (make-boa length girth) where length is the length of the boa constrictor
 // and girth is the diameter of its thickest cross section, measured in feet.
 
- // what do I do here? I don't need to define anything upfront right?
-
-const LONG_BOA = {
-  name: "boa",
-  length: 30,
-  girth: 1
+function makeBoa(length, girth) {
+  return {
+    name: "boa",
+    length: length,
+    girth: girth
+  }
 }
 
-const SHORT_BOA = {
-  name: "boa",
-  length: 4,
-  girth: .3
-}
+//examples
+
+const LONG_BOA = makeBoa (30,1);
+const SHORT_BOA = makeBoa(4,0.3);
 
 // An Animal is one of:
 // - Spider
